@@ -286,6 +286,14 @@
     _HB.style.backgroundRepeat='no-repeat';
   }
 
+  // mobile: hide the painted court center line (it intrudes on the single-column stack)
+  (function(){
+    var _st=document.createElement('style');
+    _st.textContent='@media(max-width:1000px){.court-frame::before{display:none!important;}}';
+    document.head.appendChild(_st);
+  })();
+
+
 
 })();
 })();

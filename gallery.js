@@ -88,15 +88,47 @@
       title: 'Decks, Pergolas and Outdoor Living',
       blurb: 'Composite and hardwood decks, cedar and steel pergolas, and shade structures built to take Texas sun for decades, not seasons.',
       items: [
-        { src: cdn('693879d4daae415fda92f479.jpeg'), alt: 'Custom outdoor living space by Space Cowboy' },
-        { src: cdn('67ab6aa879284bd4c56a335d.jpeg'), alt: 'Outdoor living and shade project in the Texas Hill Country' }
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee678ac2f159bb081cb92.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda6520c.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6784ddb4a8e58f2d797.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee675eada8c1f4576ef51.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda65201.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee677ac2f159bb081cb8c.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda651fc.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754ddb4a8e58f2d71f.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee67748f3373572287954.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee677ac2f159bb081cb82.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6774ddb4a8e58f2d775.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754fbc0a8906467773.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754ddb4a8e58f2d735.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754fbc0a8906467778.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee676eada8c1f4576ef5b.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee675708c41d4df100ea1.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674adefd85d72e1c32f.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6748b929b11f2ff07cf.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674ac2f159bb081cb4c.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6748b929b11f2ff07d4.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee67446e5b517c525666b.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674adefd85d72e1c333.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' }
       ]
     },
     wellness: {
       title: 'Outdoor Kitchens, Pools & Wellness',
       blurb: 'In-ground pools with built-in spas, custom outdoor kitchens designed for entertaining, saunas, and cold plunges.',
       items: [
-        { src: cdn('67ab73b23afbd4fe56ae875d.jpeg'), alt: 'Outdoor amenity and pool project in the Texas Hill Country' }
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4fbc0a890646738a.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee620708c41d4df10094b.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4ddb4a8e58f2d27f.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4ddb4a8e58f2d291.jpg', alt: 'Pool, spa, and outdoor wellness space in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e48f337357228745b.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4fbc0a8906467384.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f708c41d4df100937.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61fadefd85d72e1be04.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e4fbc0a890646736e.png', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61eac2f159bb081c625.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e46e5b517c5256104.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61eadefd85d72e1bde6.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e708c41d4df10090f.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' }
       ]
     },
     reno: {
@@ -107,13 +139,6 @@
       ]
     }
   };
-
-  // Pull the hero drone shot (has the pool) into the Pools & Wellness set
-  if(HERO){
-    var bg = getComputedStyle(HERO).backgroundImage || '';
-    var m = bg.match(/url\(["']?(data:image[^"')]+)["']?\)/);
-    if(m){ PHOTOS.wellness.items.unshift({ src: m[1], alt: 'Hill Country pool and outdoor living build at golden hour' }); }
-  }
 
   // ---- Build each card carousel ----
   var cards = document.querySelectorAll('.svc[data-cat]');

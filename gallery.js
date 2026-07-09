@@ -293,6 +293,16 @@
     document.head.appendChild(_st);
   })();
 
+  // enriched structured data (SEO + AI search): injected so Google's rendered crawl reads the full picture
+  (function(){
+    try{
+      var _ld=document.createElement('script'); _ld.type='application/ld+json';
+      _ld.textContent=JSON.stringify({"@context": "https://schema.org", "@type": "GeneralContractor", "name": "Space Cowboy", "legalName": "Watler & Co LLC", "url": "https://buildspacecowboy.com", "telephone": "+1-512-781-8265", "priceRange": "$$", "image": "https://watlerco-ops.github.io/spacecowboy-site/hero.jpg", "logo": "https://watlerco-ops.github.io/spacecowboy-site/logo.webp", "address": {"@type": "PostalAddress", "streetAddress": "71 Woodacre Dr", "addressLocality": "Wimberley", "addressRegion": "TX", "postalCode": "78676", "addressCountry": "US"}, "areaServed": ["Austin TX", "San Antonio TX", "Wimberley TX", "Dripping Springs TX", "San Marcos TX", "Kyle TX", "Buda TX", "New Braunfels TX", "Canyon Lake TX", "Blanco TX", "Johnson City TX", "Lakeway TX", "Bee Cave TX", "Spicewood TX", "Driftwood TX", "Fredericksburg TX", "Boerne TX", "Marble Falls TX", "Georgetown TX", "Round Rock TX", "Cedar Park TX", "Leander TX"], "description": "Central Texas design-build contractor specializing in backyard pickleball courts and multi-use courts, complete outdoor living spaces, pools, outdoor kitchens, saunas, and whole-home renovations for homeowners, developers, HOAs, parks, and commercial properties. Serving Austin, San Antonio, and the Texas Hill Country.", "sameAs": ["https://www.facebook.com/buildspacecowboy", "https://www.instagram.com/spacecowboyconstruction/"], "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Design-build services", "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pickleball court construction"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Multi-use court construction"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Basketball court construction"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Decks, pergolas, and outdoor living"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outdoor kitchens"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pools, spas, saunas, and cold plunges"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Whole-home renovation and additions"}}, {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General contracting"}}]}});
+      document.head.appendChild(_ld);
+    }catch(e){}
+  })();
+
+
 
 
 })();

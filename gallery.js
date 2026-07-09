@@ -279,12 +279,7 @@
 
   // swap hero to the sunset pool shot, framed toward the pool and pergola
   var _HB=document.querySelector('.hero-bg');
-  if(_HB){
-    _HB.style.backgroundImage="linear-gradient(180deg, rgba(20,16,13,0.42) 0%, rgba(20,16,13,0.14) 42%, rgba(20,16,13,0.82) 100%), url('https://watlerco-ops.github.io/spacecowboy-site/hero.jpg')";
-    _HB.style.backgroundSize='cover';
-    _HB.style.backgroundPosition='center 66%';
-    _HB.style.backgroundRepeat='no-repeat';
-  }
+  if(_HB){ _HB.style.backgroundPosition='center 66%'; }
 
   // mobile: hide the painted court center line (it intrudes on the single-column stack)
   (function(){

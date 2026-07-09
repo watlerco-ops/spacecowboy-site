@@ -225,8 +225,18 @@
   });
 
 
-  // hide the logo badge for now (clean wordmark until the new logo image is provided)
-  document.querySelectorAll('.logo-badge').forEach(function(el){ el.style.display='none'; });
+  // show the clean cowboy mark (no circle badge)
+  var _LOGO='https://watlerco-ops.github.io/spacecowboy-site/logo.webp';
+  document.querySelectorAll('.logo-badge').forEach(function(el){
+    el.style.display=''; el.style.background='none'; el.style.backgroundColor='transparent';
+    el.style.borderRadius='0'; el.style.width='auto'; el.style.height='auto';
+    el.style.minWidth='0'; el.style.padding='0'; el.style.margin='0 10px 0 0';
+    el.style.overflow='visible'; el.style.boxShadow='none'; el.style.border='none';
+  });
+  document.querySelectorAll('.logo-badge img').forEach(function(im){
+    im.src=_LOGO; im.style.width='auto'; im.style.height='40px'; im.style.maxWidth='none';
+    im.style.borderRadius='0'; im.style.objectFit='contain'; im.style.display='block';
+  });
 
 })();
 })();

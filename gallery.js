@@ -135,7 +135,21 @@
       title: 'Renovations & General Contracting',
       blurb: 'Whole-home remodels, additions, and finished interiors and exteriors, delivered with high-quality craftsmanship from concept to completion.',
       items: [
-        { src: cdn('67576714988a5fae66a22dae.jpeg'), alt: 'Home renovation and addition project by Space Cowboy' }
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88dac2f159bb082b67e.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d46e5b517c526548d.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d46e5b517c52654a7.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c48f3373572296719.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745de.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88deada8c1f4577d2bd.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745ca.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d708c41d4df1143d2.jpg', alt: 'Finished interior renovation in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d4ddb4a8e58f3d71e.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d9c9b37b5fda745e4.jpg', alt: 'Finished interior renovation in San Antonio, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c708c41d4df1143c4.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c46e5b517c526546d.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88cac2f159bb082b652.png', alt: 'Finished interior renovation by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745cf.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
+        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c8b929b11f2000142.jpg', alt: 'Finished interior renovation by Space Cowboy' }
       ]
     }
   };

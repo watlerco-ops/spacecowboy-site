@@ -66,91 +66,22 @@
     courts: {
       title: 'Multi-Use Courts',
       blurb: 'Pickleball, basketball, and multi-use courts built from the subgrade up: engineered slabs, pro acrylic surfacing, regulation striping, lighting, and fencing.',
-      items: [
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4de708c41d4df0fe482.jpg', alt: 'Backyard multi-use court with basketball and pickleball in Austin, Texas' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4de4fbc0a89064642fd.jpg', alt: 'Backyard pickleball court with turf surround' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4deeada8c1f4576b9b4.jpg', alt: 'Multi-use court at sunset in the Texas Hill Country' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4de48f3373572285f4f.jpg', alt: 'Blue and gold backyard basketball and pickleball court' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4de46e5b517c5254cb1.jpg', alt: 'Multi-use court with fire pit lounge in San Antonio' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4de4ddb4a8e58f2b32f.jpg', alt: 'Pickleball court with pergola and lounge seating in Austin' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4df46e5b517c5254ccb.jpg', alt: 'Hill Country multi-use court with basketball and pickleball' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4df8b929b11f2feceb8.jpg', alt: 'Fenced multi-use court in the Texas Hill Country' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4dfadefd85d72e19a35.jpg', alt: 'Backyard multi-use court and plunge pool in Austin' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4df48f3373572285f75.jpg', alt: 'Multi-use court with basketball and pickleball lines, aerial view' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4df9c9b37b5fda6162f.jpg', alt: 'Backyard basketball court with pool in San Antonio' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4df48f3373572285f7b.jpg', alt: 'Backyard basketball court in San Antonio' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4e04ddb4a8e58f2b361.jpg', alt: 'Multi-use pickleball court with plunge pool, aerial view' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4e0ac2f159bb081adc9.jpg', alt: 'Hill Country multi-use court and pool at dusk' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee4e18b929b11f2fed2ed.jpg', alt: 'Backyard multi-use court built by Space Cowboy' }
-      ]
+      items: []
     },
     outdoor: {
       title: 'Decks, Pergolas and Outdoor Living',
       blurb: 'Composite and hardwood decks, cedar and steel pergolas, and shade structures built to take Texas sun for decades, not seasons.',
-      items: [
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee678ac2f159bb081cb92.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda6520c.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6784ddb4a8e58f2d797.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee675eada8c1f4576ef51.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda65201.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee677ac2f159bb081cb8c.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6789c9b37b5fda651fc.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754ddb4a8e58f2d71f.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee67748f3373572287954.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee677ac2f159bb081cb82.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6774ddb4a8e58f2d775.png', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754fbc0a8906467773.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754ddb4a8e58f2d735.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6754fbc0a8906467778.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee676eada8c1f4576ef5b.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee675708c41d4df100ea1.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674adefd85d72e1c32f.jpg', alt: 'Custom deck, pergola, and outdoor living space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6748b929b11f2ff07cf.jpg', alt: 'Custom deck, pergola, and outdoor living space in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674ac2f159bb081cb4c.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee6748b929b11f2ff07d4.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee67446e5b517c525666b.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee674adefd85d72e1c333.jpg', alt: 'Custom deck, pergola, and outdoor living space in Austin, Texas by Space Cowboy' }
-      ]
+      items: []
     },
     wellness: {
       title: 'Outdoor Kitchens, Pools & Wellness',
       blurb: 'In-ground pools with built-in spas, custom outdoor kitchens designed for entertaining, saunas, and cold plunges.',
-      items: [
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4fbc0a890646738a.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee620708c41d4df10094b.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4ddb4a8e58f2d27f.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4ddb4a8e58f2d291.jpg', alt: 'Pool, spa, and outdoor wellness space in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e48f337357228745b.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f4fbc0a8906467384.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61f708c41d4df100937.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61fadefd85d72e1be04.jpg', alt: 'Pool, spa, and outdoor wellness space in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e4fbc0a890646736e.png', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61eac2f159bb081c625.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e46e5b517c5256104.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61eadefd85d72e1bde6.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ee61e708c41d4df10090f.jpg', alt: 'Pool, spa, and outdoor wellness space by Space Cowboy' }
-      ]
+      items: []
     },
     reno: {
       title: 'Renovations & General Contracting',
       blurb: 'Whole-home remodels, additions, and finished interiors and exteriors, delivered with high-quality craftsmanship from concept to completion.',
-      items: [
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88dac2f159bb082b67e.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d46e5b517c526548d.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d46e5b517c52654a7.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c48f3373572296719.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745de.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88deada8c1f4577d2bd.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745ca.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d708c41d4df1143d2.jpg', alt: 'Finished interior renovation in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d4ddb4a8e58f3d71e.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88d9c9b37b5fda745e4.jpg', alt: 'Finished interior renovation in San Antonio, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c708c41d4df1143c4.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c46e5b517c526546d.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88cac2f159bb082b652.png', alt: 'Finished interior renovation by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c9c9b37b5fda745cf.jpg', alt: 'Finished interior renovation in Austin, Texas by Space Cowboy' },
-        { src: 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_1000/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/6a4ef88c8b929b11f2000142.jpg', alt: 'Finished interior renovation by Space Cowboy' }
-      ]
+      items: []
     }
   };
 
@@ -165,8 +96,17 @@
     var countEl = card.querySelector('.svc-count');
     var items = set.items;
 
-    countEl.textContent = items.length + (items.length === 1 ? ' project' : ' projects');
     var _h3 = card.querySelector('.svc-cap h3'); if(_h3){ _h3.textContent = set.title; }
+    if(items.length === 0){
+      countEl.textContent = 'Photos coming soon';
+      var _ph = document.createElement('img'); _ph.className='svc-slide on';
+      _ph.src='https://watlerco-ops.github.io/spacecowboy-site/placeholder.jpg';
+      _ph.alt='Photos coming soon'; _ph.loading='lazy'; stage.appendChild(_ph);
+      card.style.cursor='default';
+      var _vw = card.querySelector('.svc-view'); if(_vw) _vw.style.display='none';
+      return;
+    }
+    countEl.textContent = items.length + (items.length === 1 ? ' project' : ' projects');
 
     items.forEach(function(it, i){
       var img = document.createElement('img');
@@ -258,10 +198,16 @@
   // GHL hardening: move overlays to <body> so builder wrappers cannot clip/trap them
   [modal, lb].forEach(function(el){ if(el && el.parentElement !== document.body){ document.body.appendChild(el); } });
   // make the courts feature image and thumbnail strip open the courts gallery
-  document.querySelectorAll('.court-feature img, .court-strip img').forEach(function(im){
-    im.style.cursor = 'zoom-in';
-    im.addEventListener('click', function(){ openModal('courts'); });
-  });
+  if(PHOTOS.courts.items.length === 0){
+    var _cph='https://watlerco-ops.github.io/spacecowboy-site/placeholder.jpg';
+    document.querySelectorAll('.court-feature img').forEach(function(im){ im.src=_cph; im.alt='Photos coming soon'; });
+    document.querySelectorAll('.court-strip').forEach(function(el){ el.style.display='none'; });
+  } else {
+    document.querySelectorAll('.court-feature img, .court-strip img').forEach(function(im){
+      im.style.cursor = 'zoom-in';
+      im.addEventListener('click', function(){ openModal('courts'); });
+    });
+  }
 
 
   // show the clean cowboy mark (no circle badge)

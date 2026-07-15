@@ -53,7 +53,7 @@
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // CDN helper for Space Cowboy's hosted project photos (same source as the courts section)
-  function cdn(id, w){ return 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_' + (w||1200) + '/u_https://assets.cdn.filesafe.space/Gj6Fk925mIxTX5BTuLLP/media/' + id; }
+  function cdn(id, w){ return 'https://images.leadconnectorhq.com/image/f_webp/q_80/r_' + (w||1200) + '/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/' + id; }
 
   // ---- PHOTO SETS ----
   // Seeded with real Space Cowboy photos we already have. Add more objects to any
@@ -66,22 +66,64 @@
     courts: {
       title: 'Multi-Use Courts',
       blurb: 'Pickleball, basketball, and multi-use courts built from the subgrade up: engineered slabs, pro acrylic surfacing, regulation striping, lighting, and fencing.',
-      items: []
+      items: [
+        {src: cdn('6a5660d146ff6bf801876083.jpg'), alt: 'Custom backyard court at dusk in the Texas Hill Country'},
+        {src: cdn('6a565f5af1f33d94432e31da.jpg'), alt: 'Custom pickleball court build by Space Cowboy Construction'},
+        {src: cdn('6a565f20524a3ec4c67d331f.jpg'), alt: 'Aerial view of a custom multi-use court in Central Texas'},
+        {src: cdn('6a565f1146ff6bf80186cc3f.jpg'), alt: 'Professional-grade court surfacing on a residential build'},
+        {src: cdn('6a565f1121818528a81207bb.jpeg'), alt: 'Drone view of a backyard pickleball court project'},
+        {src: cdn('6a565efe9c9b37b5fd7a6002.jpg'), alt: 'Aerial view of a custom court and outdoor living space'},
+        {src: cdn('6a565efe46ff6bf80186c861.jpg'), alt: 'Custom court construction in the Austin area'},
+        {src: cdn('6a565ee6eb2d8ac16739c3b4.jpg'), alt: 'Backyard court with professional striping and finishes'},
+        {src: cdn('6a565ed7180dde3f8611efef.jpg'), alt: 'Wide view of a fenced residential multi-use court'},
+        {src: cdn('6a565eca9c9b37b5fd7a521b.jpg'), alt: 'Court detail from a Space Cowboy Construction project'},
+        {src: cdn('6a565eb8524a3ec4c67d18b2.jpg'), alt: 'Custom pickleball court in the Texas Hill Country'},
+        {src: cdn('6a565ea246ff6bf801868306.jpg'), alt: 'Residential court build by Space Cowboy Construction'},
+        {src: cdn('6a565e87180dde3f8611c3d7.jpg'), alt: 'Custom backyard pickleball court project'},
+        {src: cdn('6a565e7deb2d8ac167396111.jpg'), alt: 'Court construction detail in Central Texas'},
+        {src: cdn('6a565e2c180dde3f8611956b.jpg'), alt: 'Custom multi-use court project in Central Texas'},
+        {src: cdn('6a565e2c326e2a8d452d3111.jpg'), alt: 'Aerial view of a completed backyard court'},
+        {src: cdn('6a565e2c326e2a8d452d310c.jpg'), alt: 'Custom court and landscaping by Space Cowboy Construction'},
+        {src: cdn('6a565e2ceb2d8ac1673942e9.jpg'), alt: 'Drone shot of a custom pickleball court build'}
+      ]
     },
     outdoor: {
       title: 'Decks, Pergolas and Outdoor Living',
       blurb: 'Composite and hardwood decks, cedar and steel pergolas, and shade structures built to take Texas sun for decades, not seasons.',
-      items: []
+      items: [
+        {src: cdn('6a56bf35409a5ebf45226c83.jpg'), alt: 'Aerial view of a custom deck and outdoor living project'},
+        {src: cdn('6a56602d9c9b37b5fd7afa18.jpg'), alt: 'Custom outdoor living space in Central Texas'},
+        {src: cdn('6a566019f1f33d94432e7cd5.jpg'), alt: 'Deck and pergola project by Space Cowboy Construction'},
+        {src: cdn('6a566002524a3ec4c67da7c5.jpg'), alt: 'Backyard outdoor living build in the Austin area'},
+        {src: cdn('6a565ff59c9b37b5fd7aeb24.jpg'), alt: 'Aerial view of a completed outdoor living project'},
+        {src: cdn('6a565fe6baf5f6da400309b7.jpg'), alt: 'Custom shade structure and patio project'},
+        {src: cdn('6a565fb4f1f33d94432e5ec3.jpg'), alt: 'Outdoor living project in the Texas Hill Country'},
+        {src: cdn('6a565f9f46ff6bf80186e7d3.jpg'), alt: 'Custom deck build by Space Cowboy Construction'},
+        {src: cdn('6a565f9721818528a81230fd.jpg'), alt: 'Deck and outdoor living detail in Central Texas'},
+        {src: cdn('6a565f97326e2a8d452e2301.jpg'), alt: 'Completed deck project in the Austin area'}
+      ]
     },
     wellness: {
       title: 'Outdoor Kitchens, Pools & Wellness',
       blurb: 'In-ground pools with built-in spas, custom outdoor kitchens designed for entertaining, saunas, and cold plunges.',
-      items: []
+      items: [
+        {src: cdn('6a5660a8326e2a8d452e8afe.jpg'), alt: 'Aerial view of a custom pool and spa at sunset'},
+        {src: cdn('6a566099eb2d8ac1673ad74e.jpg'), alt: 'Custom outdoor kitchen built for entertaining'},
+        {src: cdn('6a56608646ff6bf801874118.jpg'), alt: 'Pool and outdoor living project by Space Cowboy Construction'},
+        {src: cdn('6a56607c9c9b37b5fd7b1e79.jpg'), alt: 'Custom pool and patio in Central Texas'},
+        {src: cdn('6a5660721097b81195c43f94.jpg'), alt: 'Aerial view of a backyard pool project'}
+      ]
     },
     reno: {
       title: 'Renovations & General Contracting',
       blurb: 'Whole-home remodels, additions, and finished interiors and exteriors, delivered with high-quality craftsmanship from concept to completion.',
-      items: []
+      items: [
+        {src: cdn('6a56be60409a5ebf452248a1.jpg'), alt: 'Whole-home renovation by Space Cowboy Construction'},
+        {src: cdn('6a56be096bcefc724b386081.jpg'), alt: 'Renovated interior from a Central Texas remodel'},
+        {src: cdn('6a56bdf1524a3ec4c69d0f6a.jpg'), alt: 'Finished renovation project in Austin'},
+        {src: cdn('6a56bde5eb2d8ac1675bd5b1.jpg'), alt: 'Custom remodel by Space Cowboy Construction'},
+        {src: cdn('6a56bdd21097b81195e1b493.jpg'), alt: 'Interior renovation detail in Central Texas'}
+      ]
     }
   };
 
@@ -203,6 +245,14 @@
     document.querySelectorAll('.court-feature img').forEach(function(im){ im.src=_cph; im.alt='Photos coming soon'; });
     document.querySelectorAll('.court-strip').forEach(function(el){ el.style.display='none'; });
   } else {
+    var _cf = PHOTOS.courts.items;
+    document.querySelectorAll('.court-feature img').forEach(function(im){
+      im.src = _cf[0].src.replace(/r_\d+/, 'r_1600'); im.alt = _cf[0].alt;
+    });
+    document.querySelectorAll('.court-strip img').forEach(function(im, i){
+      var it = _cf[(i + 1) % _cf.length];
+      im.src = it.src.replace(/r_\d+/, 'r_600'); im.alt = it.alt;
+    });
     document.querySelectorAll('.court-feature img, .court-strip img').forEach(function(im){
       im.style.cursor = 'zoom-in';
       im.addEventListener('click', function(){ openModal('courts'); });
@@ -223,9 +273,18 @@
     im.style.borderRadius='0'; im.style.objectFit='contain'; im.style.display='block';
   });
 
-  // swap hero to the sunset pool shot, framed toward the pool and pergola
+  // hero: real drone shot from GHL Media Storage (Website Hero folder, first image)
   var _HB=document.querySelector('.hero-bg');
-  if(_HB){ _HB.style.backgroundPosition='center 66%'; }
+  if(_HB){
+    _HB.style.backgroundImage="url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1920/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/6a56518c180dde3f860de8fb.jpg')";
+    _HB.style.backgroundPosition='center 55%';
+  }
+
+  // thank-you page: keep it out of search results (conversion page)
+  if(/\/thank-you\/?$/.test(location.pathname)){
+    var _nr=document.createElement('meta'); _nr.name='robots'; _nr.content='noindex, follow';
+    document.head.appendChild(_nr);
+  }
 
   // mobile: hide the painted court center line (it intrudes on the single-column stack)
   (function(){

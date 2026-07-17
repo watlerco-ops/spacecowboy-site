@@ -296,7 +296,7 @@
   // hero: real drone shot from GHL Media Storage (Website Hero folder, first image)
   var _HB=document.querySelector('.hero-bg');
   if(_HB){
-    _HB.style.backgroundImage="url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1920/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/6a56518c180dde3f860de8fb.jpg')";
+    _HB.style.backgroundImage="url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1920/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/6a5a83069c9b37b5fda1bba4.png')";
     _HB.style.backgroundPosition='center 55%';
   }
 

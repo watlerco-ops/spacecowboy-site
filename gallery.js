@@ -1,6 +1,44 @@
 /* Space Cowboy site gallery engine - hosted, edit here to update the live site */
 (function(){
   function boot(){
+  // Proof bar (#2) + whole-section scroll reveal (#5). Runs BEFORE the reveal
+  // observer below, so the existing IntersectionObserver picks up both the newly
+  // tagged section bands and the proof bar in its single boot-time observe pass.
+  (function(){
+    var heroBg=document.querySelector('.hero-bg');
+    if(!heroBg) return;                                   // home page only (proof bar + section tagging)
+    var heroSec=heroBg.closest('header, section') || heroBg.parentElement;
+    var container=heroSec ? heroSec.parentElement : null;
+
+    // #5: tag each top-level content SECTION so the whole band reveals on scroll.
+    // Children that are already .reveal keep their own staggered fade (different
+    // parent scope), so this layers a band-level fade over the existing item motion.
+    if(container){
+      Array.prototype.forEach.call(container.children, function(el){
+        if(el.tagName==='SECTION' && !el.classList.contains('reveal')){ el.classList.add('reveal'); }
+      });
+    }
+
+    // #2: proof bar, inserted once immediately after the hero section. Idempotent by id.
+    if(!document.getElementById('sc-proof-bar')){
+      var _pc=document.createElement('style');
+      _pc.textContent='#sc-proof-bar{font-family:inherit;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:.55em 1em;margin:0;padding:15px 22px;box-sizing:border-box;text-align:center;color:#191512;background:rgba(25,21,18,.035);border-top:1px solid rgba(25,21,18,.15);border-bottom:1px solid rgba(25,21,18,.15);}'
+        +'#sc-proof-bar .sc-proof-item{font-size:12px;line-height:1.25;letter-spacing:.08em;text-transform:uppercase;font-weight:600;white-space:nowrap;}'
+        +'#sc-proof-bar .sc-proof-sep{opacity:.5;font-size:.8em;line-height:1;}'
+        +'@media(max-width:640px){#sc-proof-bar{padding:13px 16px;gap:.5em 1.15em;}#sc-proof-bar .sc-proof-sep{display:none;}}';
+      document.head.appendChild(_pc);
+
+      var bar=document.createElement('div');
+      bar.id='sc-proof-bar'; bar.className='reveal';
+      bar.setAttribute('role','list'); bar.setAttribute('aria-label','Space Cowboy proof points');
+      var _stats=['5.0 on Google','40 five-star reviews','Licensed Texas GC','Free on-site estimate'];
+      _stats.forEach(function(t,i){
+        if(i>0){ var s=document.createElement('span'); s.className='sc-proof-sep'; s.setAttribute('aria-hidden','true'); s.textContent='✶'; bar.appendChild(s); }
+        var it=document.createElement('span'); it.className='sc-proof-item'; it.setAttribute('role','listitem'); it.textContent=t; bar.appendChild(it);
+      });
+      heroSec.parentNode.insertBefore(bar, heroSec.nextSibling);
+    }
+  })();
 (function(){
 (function(){
   var els = document.querySelectorAll('.reveal');
@@ -367,7 +405,7 @@
     });
   });
 
-  // Step 2 — neutralize any ancestor rasterization trap. If a GHL builder wrapper
+  // Step 2: neutralize any ancestor rasterization trap. If a GHL builder wrapper
   // up the tree applies transform/filter/backdrop-filter (which forces the browser
   // to bake the vector to a bitmap), scope a defensive reset onto the mark wrapper.
   // No-op if no such ancestor exists; kept scoped to .sc-wm-svg so nothing else moves.

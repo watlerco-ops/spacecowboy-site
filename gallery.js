@@ -1,10 +1,29 @@
 /* Space Cowboy site gallery engine - hosted, edit here to update the live site */
 (function(){
-  function boot(){
-  // Proof bar (#2) + whole-section scroll reveal (#5). Runs BEFORE the reveal
-  // observer below, so the existing IntersectionObserver picks up both the newly
-  // tagged section bands and the proof bar in its single boot-time observe pass.
-  (function(){
+  // Marker class set the instant this script executes, so the GHL page head CSS can
+  // gate .reveal{opacity:0} behind html.sc-js and never leave content hidden when the
+  // remote script is slow to arrive. Harmless on its own until GHL scopes the rule.
+  document.documentElement.className += ' sc-js';
+
+  // Guards so each visual piece runs exactly once, whether reached by the early pass
+  // or by the card gated boot. This is what prevents the double visible jump / reset.
+  var _once={hero:0, reveal:0, proof:0};
+
+  // hero brighten: only needs .hero-bg, so it runs on the early visual pass instead
+  // of waiting inside the card gated boot (that late set is the dull then bright jump).
+  function setHero(){
+    if(_once.hero) return; _once.hero=1;
+    var _HB=document.querySelector('.hero-bg');
+    if(_HB){
+      _HB.style.backgroundImage="url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1920/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/6a5a83069c9b37b5fda1bba4.png?v=20260717')";
+      _HB.style.backgroundPosition='center 55%';
+    }
+  }
+
+  // Proof bar (#2) + whole-section scroll reveal (#5). Runs BEFORE armReveal so the
+  // observer picks up the newly tagged section bands and the proof bar.
+  function setupProof(){
+    if(_once.proof) return; _once.proof=1;
     var heroBg=document.querySelector('.hero-bg');
     if(!heroBg) return;                                   // home page only (proof bar + section tagging)
     var heroSec=heroBg.closest('header, section') || heroBg.parentElement;
@@ -38,9 +57,12 @@
       });
       heroSec.parentNode.insertBefore(bar, heroSec.nextSibling);
     }
-  })();
-(function(){
-(function(){
+  }
+
+  // Reveal engine: arm the IntersectionObserver + nav-link close + scroll-progress.
+  // Runs on the early pass so motion is live on first view, not after the boot spin.
+  function armReveal(){
+    if(_once.reveal) return; _once.reveal=1;
   var els = document.querySelectorAll('.reveal');
   if(!('IntersectionObserver' in window)){
     els.forEach(function(e){e.classList.add('in');});
@@ -83,9 +105,15 @@
     if(!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
   }, {passive:true});
   onScroll();
-})();
-})();
+  }
 
+  // One early setup pass for the visual pieces, decoupled from the card wait so the
+  // hero brightens and motion arms the instant the script runs (order: proof tags the
+  // section bands, then armReveal observes them).
+  function earlyVisual(){ setHero(); setupProof(); armReveal(); }
+
+  function boot(){
+    earlyVisual();               // idempotent (guarded); guarantees visuals if the early pass was missed
 (function(){
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -436,12 +464,8 @@
     im.style.borderRadius='0'; im.style.objectFit='contain'; im.style.display='block';
   });
 
-  // hero: real drone shot from GHL Media Storage (Website Hero folder, first image)
-  var _HB=document.querySelector('.hero-bg');
-  if(_HB){
-    _HB.style.backgroundImage="url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_1920/u_https://assets.cdn.filesafe.space/NOyap67cAaEsqRNqR2ld/media/6a5a83069c9b37b5fda1bba4.png?v=20260717')";
-    _HB.style.backgroundPosition='center 55%';
-  }
+  // hero background is set early by setHero() on the visual pass (top of file), so it
+  // brightens the instant the script runs instead of waiting for this card gated pass.
 
   // thank-you page: keep it out of search results (conversion page)
   if(/\/thank-you\/?$/.test(location.pathname)){
@@ -478,10 +502,28 @@
 })();
 })();
   }
-  var tries = 0;
+  // Fire the visual pass as early as the script can run: immediately if the DOM is
+  // already parsed, otherwise on DOMContentLoaded. This is what un-gates the hero and
+  // reveal from the card wait below.
+  function runEarly(){ earlyVisual(); }
+  if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', runEarly); }
+  else { runEarly(); }
+
+  // Card gated boot (carousel + portfolio + wordmark + schema) needs .svc[data-cat].
+  // Land it fast: a one-shot MutationObserver on the container plus a short poll, and
+  // a booted guard so it can only run once (no reset flicker from a second late tick).
+  var tries = 0, booted = false;
+  function doBoot(){ if(booted) return; booted = true; boot(); }
   function tryBoot(){
-    if(document.querySelector('.svc[data-cat]') || tries > 25){ boot(); }
-    else { tries++; setTimeout(tryBoot, 150); }
+    if(document.querySelector('.svc[data-cat]')){ doBoot(); }
+    else if(tries++ < 60){ setTimeout(tryBoot, 60); }
+    else { doBoot(); }   // fallback: boot anyway so the non-card work still runs
+  }
+  if('MutationObserver' in window){
+    var _mo=new MutationObserver(function(){
+      if(document.querySelector('.svc[data-cat]')){ _mo.disconnect(); doBoot(); }
+    });
+    try{ _mo.observe(document.documentElement, {childList:true, subtree:true}); }catch(e){}
   }
   if(document.readyState==='loading'){ document.addEventListener('DOMContentLoaded', tryBoot); }
   else { tryBoot(); }

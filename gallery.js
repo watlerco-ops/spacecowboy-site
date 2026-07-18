@@ -31,7 +31,7 @@
       var bar=document.createElement('div');
       bar.id='sc-proof-bar'; bar.className='reveal';
       bar.setAttribute('role','list'); bar.setAttribute('aria-label','Space Cowboy proof points');
-      var _stats=['5.0 on Google','40 five-star reviews','Licensed Texas GC','Free on-site estimate'];
+      var _stats=['5.0 on Google','40 five-star reviews','Free on-site estimate'];
       _stats.forEach(function(t,i){
         if(i>0){ var s=document.createElement('span'); s.className='sc-proof-sep'; s.setAttribute('aria-hidden','true'); s.textContent='✶'; bar.appendChild(s); }
         var it=document.createElement('span'); it.className='sc-proof-item'; it.setAttribute('role','listitem'); it.textContent=t; bar.appendChild(it);

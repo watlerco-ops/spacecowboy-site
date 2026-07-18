@@ -148,7 +148,7 @@
       var _vw = card.querySelector('.svc-view'); if(_vw) _vw.style.display='none';
       return;
     }
-    countEl.textContent = items.length + (items.length === 1 ? ' project' : ' projects');
+    if(countEl){ countEl.textContent = ''; countEl.style.display = 'none'; }
 
     items.forEach(function(it, i){
       var img = document.createElement('img');
@@ -208,13 +208,10 @@
     if(!set.items.length){
       grid.innerHTML = '<p class="pf-empty">Photos coming soon.</p>';
     } else {
-      set.items.forEach(function(it){
+      set.items.forEach(function(it, i){
         var img = document.createElement('img');
         img.src = it.src; img.alt = it.alt; img.loading = 'lazy';
-        img.addEventListener('click', function(){
-          lbImg.src = it.src.replace(/r_\d+/, 'r_1600'); lbImg.alt = it.alt;
-          lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
-        });
+        img.addEventListener('click', function(){ lbOpen(set.items, i); });
         grid.appendChild(img);
       });
     }
@@ -229,12 +226,74 @@
   }
   document.getElementById('pfClose').addEventListener('click', closeModal);
   modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
-  lb.addEventListener('click', function(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); });
+  // ---- Lightbox navigation (next/back without exiting the photo) ----
+  var lbItems = [], lbIndex = 0;
+
+  var _lbCss = document.createElement('style');
+  _lbCss.textContent = '.pf-lb-nav{position:fixed;top:50%;transform:translateY(-50%);z-index:12;width:52px;height:52px;padding:0;border:0;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;font-size:30px;line-height:1;cursor:pointer;display:none;align-items:center;justify-content:center;transition:background .18s}'
+    + '#pfLightbox.open .pf-lb-nav{display:flex}'
+    + '.pf-lb-nav:hover{background:rgba(0,0,0,.72)}'
+    + '.pf-lb-prev{left:16px}.pf-lb-next{right:16px}'
+    + '#pfLightboxImg{touch-action:pan-y}'
+    + '@media(max-width:640px){.pf-lb-nav{width:44px;height:44px;font-size:24px}.pf-lb-prev{left:8px}.pf-lb-next{right:8px}}';
+  document.head.appendChild(_lbCss);
+
+  function mkNav(cls, label, glyph){
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'pf-lb-nav ' + cls;
+    b.setAttribute('aria-label', label); b.innerHTML = glyph;
+    lb.appendChild(b);
+    return b;
+  }
+  var lbPrev = mkNav('pf-lb-prev', 'Previous photo', '&#8249;');
+  var lbNext = mkNav('pf-lb-next', 'Next photo', '&#8250;');
+
+  function lbShow(n){
+    if(!lbItems.length) return;
+    lbIndex = (n + lbItems.length) % lbItems.length;
+    var it = lbItems[lbIndex];
+    lbImg.src = it.src.replace(/r_\d+/, 'r_1600');
+    lbImg.alt = it.alt;
+    [lbIndex + 1, lbIndex - 1].forEach(function(k){
+      var nx = lbItems[(k + lbItems.length) % lbItems.length];
+      if(nx){ var p = new Image(); p.src = nx.src.replace(/r_\d+/, 'r_1600'); }
+    });
+    var solo = lbItems.length < 2;
+    lbPrev.style.visibility = solo ? 'hidden' : 'visible';
+    lbNext.style.visibility = solo ? 'hidden' : 'visible';
+  }
+  function lbOpen(items, i){
+    lbItems = items || [];
+    lbShow(i || 0);
+    lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+  }
+  function lbClose(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); }
+
+  lbPrev.addEventListener('click', function(e){ e.stopPropagation(); lbShow(lbIndex - 1); });
+  lbNext.addEventListener('click', function(e){ e.stopPropagation(); lbShow(lbIndex + 1); });
+  lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
+  lb.addEventListener('click', lbClose);
+
+  var _tx = 0, _ty = 0;
+  lb.addEventListener('touchstart', function(e){
+    if(!e.touches.length) return;
+    _tx = e.touches[0].clientX; _ty = e.touches[0].clientY;
+  }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if(!e.changedTouches.length) return;
+    var dx = e.changedTouches[0].clientX - _tx;
+    var dy = e.changedTouches[0].clientY - _ty;
+    if(Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)){ lbShow(lbIndex + (dx < 0 ? 1 : -1)); }
+  }, {passive:true});
+
   document.addEventListener('keydown', function(e){
+    var open = lb.classList.contains('open');
     if(e.key === 'Escape'){
-      if(lb.classList.contains('open')){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); }
+      if(open){ lbClose(); }
       else if(modal.classList.contains('open')){ closeModal(); }
     }
+    else if(open && e.key === 'ArrowRight'){ lbShow(lbIndex + 1); }
+    else if(open && e.key === 'ArrowLeft'){ lbShow(lbIndex - 1); }
   });
 
   // GHL hardening: move overlays to <body> so builder wrappers cannot clip/trap them

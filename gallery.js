@@ -230,23 +230,33 @@
   var lbItems = [], lbIndex = 0;
 
   var _lbCss = document.createElement('style');
-  _lbCss.textContent = '.pf-lb-nav{position:fixed;top:50%;transform:translateY(-50%);z-index:12;width:52px;height:52px;padding:0;border:0;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;font-size:30px;line-height:1;cursor:pointer;display:none;align-items:center;justify-content:center;transition:background .18s}'
+  _lbCss.textContent = '.pf-lb-nav{position:fixed;top:14%;height:72%;z-index:12;width:104px;padding:0;border:0;background:transparent;color:#fff;cursor:pointer;display:none;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent}'
     + '#pfLightbox.open .pf-lb-nav{display:flex}'
-    + '.pf-lb-nav:hover{background:rgba(0,0,0,.72)}'
-    + '.pf-lb-prev{left:16px}.pf-lb-next{right:16px}'
-    + '#pfLightboxImg{touch-action:pan-y}'
-    + '@media(max-width:640px){.pf-lb-nav{width:44px;height:44px;font-size:24px}.pf-lb-prev{left:8px}.pf-lb-next{right:8px}}';
+    + '.pf-lb-nav .pf-lb-glyph{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.45);font-size:30px;line-height:1;transition:background .18s}'
+    + '.pf-lb-nav:hover .pf-lb-glyph{background:rgba(0,0,0,.72)}'
+    + '.pf-lb-prev{left:0}.pf-lb-next{right:0}'
+    + '.pf-lb-close{position:fixed;top:14px;left:14px;z-index:14;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;font-size:22px;line-height:1;cursor:pointer;display:none;align-items:center;justify-content:center;transition:background .18s;-webkit-tap-highlight-color:transparent}'
+    + '#pfLightbox.open .pf-lb-close{display:flex}'
+    + '.pf-lb-close:hover{background:rgba(0,0,0,.72)}'
+    + '#pfLightboxImg{touch-action:pan-y;cursor:zoom-out}'
+    + '@media(max-width:640px){.pf-lb-nav{width:76px;top:18%;height:64%}.pf-lb-nav .pf-lb-glyph{width:44px;height:44px;font-size:24px}.pf-lb-close{top:10px;left:10px}}';
   document.head.appendChild(_lbCss);
 
   function mkNav(cls, label, glyph){
     var b = document.createElement('button');
     b.type = 'button'; b.className = 'pf-lb-nav ' + cls;
-    b.setAttribute('aria-label', label); b.innerHTML = glyph;
+    b.setAttribute('aria-label', label);
+    b.innerHTML = '<span class="pf-lb-glyph">' + glyph + '</span>';
     lb.appendChild(b);
     return b;
   }
   var lbPrev = mkNav('pf-lb-prev', 'Previous photo', '&#8249;');
   var lbNext = mkNav('pf-lb-next', 'Next photo', '&#8250;');
+
+  var lbX = document.createElement('button');
+  lbX.type = 'button'; lbX.className = 'pf-lb-close';
+  lbX.setAttribute('aria-label', 'Close photo'); lbX.innerHTML = '&#10005;';
+  lb.appendChild(lbX);
 
   function lbShow(n){
     if(!lbItems.length) return;
@@ -266,24 +276,37 @@
     lbItems = items || [];
     lbShow(i || 0);
     lb.classList.add('open'); lb.setAttribute('aria-hidden','false');
+    lbX.focus();
   }
   function lbClose(){ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); }
 
+  var _swiped = false;
+
   lbPrev.addEventListener('click', function(e){ e.stopPropagation(); lbShow(lbIndex - 1); });
   lbNext.addEventListener('click', function(e){ e.stopPropagation(); lbShow(lbIndex + 1); });
-  lbImg.addEventListener('click', function(e){ e.stopPropagation(); });
-  lb.addEventListener('click', lbClose);
+  lbX.addEventListener('click', function(e){ e.stopPropagation(); lbClose(); });
+
+  // click the photo (or the backdrop) to go back to the portfolio grid
+  lb.addEventListener('click', function(){
+    if(_swiped){ _swiped = false; return; }
+    lbClose();
+  });
 
   var _tx = 0, _ty = 0;
   lb.addEventListener('touchstart', function(e){
     if(!e.touches.length) return;
+    _swiped = false;
     _tx = e.touches[0].clientX; _ty = e.touches[0].clientY;
   }, {passive:true});
   lb.addEventListener('touchend', function(e){
     if(!e.changedTouches.length) return;
     var dx = e.changedTouches[0].clientX - _tx;
     var dy = e.changedTouches[0].clientY - _ty;
-    if(Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)){ lbShow(lbIndex + (dx < 0 ? 1 : -1)); }
+    if(Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)){
+      _swiped = true;
+      lbShow(lbIndex + (dx < 0 ? 1 : -1));
+      setTimeout(function(){ _swiped = false; }, 400);
+    }
   }, {passive:true});
 
   document.addEventListener('keydown', function(e){
